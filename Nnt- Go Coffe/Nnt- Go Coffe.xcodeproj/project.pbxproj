@@ -128,6 +128,7 @@
 		45BD3ACB28B69C3B00A21092 /* Nnt- Go Coffe */ = {
 			isa = PBXGroup;
 			children = (
+				4561F74E28B9393F00DB7492 /* Coffee */,
 				4561F74F28B9394C00DB7492 /* Favorites */,
 				45BD3ACC28B69C3B00A21092 /* AppDelegate.swift */,
 				45BD3ACE28B69C3B00A21092 /* SceneDelegate.swift */,
@@ -151,7 +152,6 @@
 		45BD3AEF28B69C3E00A21092 /* Nnt- Go CoffeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				4561F74E28B9393F00DB7492 /* Coffee */,
 				45BD3AF028B69C3E00A21092 /* Nnt__Go_CoffeUITests.swift */,
 				45BD3AF228B69C3E00A21092 /* Nnt__Go_CoffeUITestsLaunchTests.swift */,
 			);

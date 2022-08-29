@@ -10,16 +10,18 @@ import UIKit
 class TableViewCoffee: UITableViewCell {
 
     static let identifier: String = "TableViewCoffee"
+    
     lazy var imageViewFavorite: UIImageView = {
+
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: "Cafeteria 1")
+        //image.image = UIImage(data: imageCafeteria)
         return image
     }()
     lazy var textLabelFavorite: UILabel = {
         let text = UILabel()
         text.translatesAutoresizingMaskIntoConstraints = false
-        text.text = "Cafeteria 1"
+        //text.text = "Cafeteria 1"
         text.textColor = .black
         text.font = UIFont.systemFont(ofSize: 22, weight: .bold)
         return text
@@ -27,15 +29,15 @@ class TableViewCoffee: UITableViewCell {
     lazy var descLabelFavorite: UILabel = {
         let desc = UILabel()
         desc.translatesAutoresizingMaskIntoConstraints = false
-        desc.text = "Essa cafeteria é ótima"
-        desc.textColor = .gray
+        //desc.text = "Essa cafeteria é ótima"
+        desc.textColor = .lightGray
         desc.font = UIFont.systemFont(ofSize: 13, weight: .regular)
         return desc
     }()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        self.backgroundColor = .lightGray
+
         addSubview(imageViewFavorite)
         addSubview(textLabelFavorite)
         addSubview(descLabelFavorite)
@@ -47,7 +49,7 @@ class TableViewCoffee: UITableViewCell {
         configDescView()
     }
     func configImage() {
-        imageViewFavorite.layer.cornerRadius = 10
+        imageViewFavorite.layer.cornerRadius = 20
         imageViewFavorite.clipsToBounds = true
     }
     func configLabel() {

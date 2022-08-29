@@ -10,6 +10,9 @@ import UIKit
 
 
 class CoffeeView: UIViewController{
+
+    var items = listaCafeterias
+
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -43,15 +46,24 @@ class CoffeeView: UIViewController{
 
 extension CoffeeView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return items.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell( withIdentifier: TableViewCoffee.identifier, for: indexPath) as? TableViewCoffee
-        return cell ?? UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(
+            withIdentifier: TableViewCoffee.identifier,
+            for: indexPath
+            ) as? TableViewCoffee else {
+        return UITableViewCell()}
+        let coffee = self.items[indexPath.row]
+        print(coffee)
+        cell.imageViewFavorite.image = UIImage(named: coffee.imageCafeteria)
+        cell.textLabelFavorite.text = coffee.titleCafeteria
+        cell.descLabelFavorite.text = coffee.descCafeteria
+        return cell
     }
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
 }
-

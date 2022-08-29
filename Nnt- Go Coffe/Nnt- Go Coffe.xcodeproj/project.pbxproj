@@ -21,6 +21,7 @@
 		45BD3AF128B69C3E00A21092 /* Nnt__Go_CoffeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD3AF028B69C3E00A21092 /* Nnt__Go_CoffeUITests.swift */; };
 		45BD3AF328B69C3E00A21092 /* Nnt__Go_CoffeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD3AF228B69C3E00A21092 /* Nnt__Go_CoffeUITestsLaunchTests.swift */; };
 		45FD0A2528BD337400849160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FD0A2428BD337400849160 /* Assets.xcassets */; };
+		45FD0A2828BD35E700849160 /* DetailsCoffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FD0A2728BD35E700849160 /* DetailsCoffee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		45BD3AF028B69C3E00A21092 /* Nnt__Go_CoffeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nnt__Go_CoffeUITests.swift; sourceTree = "<group>"; };
 		45BD3AF228B69C3E00A21092 /* Nnt__Go_CoffeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nnt__Go_CoffeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		45FD0A2428BD337400849160 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45FD0A2728BD35E700849160 /* DetailsCoffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCoffee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		45BD3ACB28B69C3B00A21092 /* Nnt- Go Coffe */ = {
 			isa = PBXGroup;
 			children = (
+				45FD0A2628BD35D600849160 /* Details */,
 				4561F74E28B9393F00DB7492 /* Coffee */,
 				4561F74F28B9394C00DB7492 /* Favorites */,
 				45BD3ACC28B69C3B00A21092 /* AppDelegate.swift */,
@@ -156,6 +159,14 @@
 				45BD3AF228B69C3E00A21092 /* Nnt__Go_CoffeUITestsLaunchTests.swift */,
 			);
 			path = "Nnt- Go CoffeUITests";
+			sourceTree = "<group>";
+		};
+		45FD0A2628BD35D600849160 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				45FD0A2728BD35E700849160 /* DetailsCoffee.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +305,7 @@
 				45230B3F28B850F300855D99 /* CoffeeView.swift in Sources */,
 				4561F75128B970D700DB7492 /* TableViewCoffee.swift in Sources */,
 				45230B4128B8511F00855D99 /* FavoriteView.swift in Sources */,
+				45FD0A2828BD35E700849160 /* DetailsCoffee.swift in Sources */,
 				45BD3AD128B69C3B00A21092 /* MyTabController.swift in Sources */,
 				45BD3ACD28B69C3B00A21092 /* AppDelegate.swift in Sources */,
 				45BD3ACF28B69C3B00A21092 /* SceneDelegate.swift in Sources */,

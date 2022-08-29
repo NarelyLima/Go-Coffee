@@ -13,13 +13,11 @@ class CustomTableViewCell: UITableViewCell {
     lazy var imageViewFavorite: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        //image.image = UIImage(named: "Cafeteria 1")
         return image
     }()
     lazy var textLabelFavorite: UILabel = {
         let text = UILabel()
         text.translatesAutoresizingMaskIntoConstraints = false
-//        text.text = "Cafeteria 1"
         text.textColor = .black
         text.font = UIFont.systemFont(ofSize: 22, weight: .bold)
         return text
@@ -27,7 +25,6 @@ class CustomTableViewCell: UITableViewCell {
     lazy var descLabelFavorite: UILabel = {
         let desc = UILabel()
         desc.translatesAutoresizingMaskIntoConstraints = false
-        //desc.text = "Essa cafeteria é ótima"
         desc.textColor = .lightGray
         desc.font = UIFont.systemFont(ofSize: 13, weight: .regular)
         return desc

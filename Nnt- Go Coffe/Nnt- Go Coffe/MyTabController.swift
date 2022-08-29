@@ -15,9 +15,9 @@ class MyTabController: UITabBarController {
     }
 
         private func setupTabBarController() {
-            let coffeeView = CoffeeView()
-            let favoriteView = FavoriteView()
-            self.setViewControllers([coffeeView, favoriteView], animated: false)
+            let coffeeView = UINavigationController(rootViewController: CoffeeView())
+            let favoriteView = UINavigationController(rootViewController: FavoriteView())
+            self.setViewControllers([coffeeView, favoriteView], animated: true)
 
             self.tabBar.backgroundColor = .lightGray
             self.tabBar.tintColor = .black

@@ -10,14 +10,6 @@ import UIKit
 
 class FavoriteView: UIViewController{
 
-    let titleLabel: UILabel =  {
-        let label = UILabel()
-        label.text = "Favoritos"
-        label.textColor = .black
-        label.font = UIFont.systemFont(ofSize: 28, weight: .bold)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -34,8 +26,9 @@ class FavoriteView: UIViewController{
         super.viewDidLoad()
         self.view.backgroundColor = .white
         self.view.addSubview(self.tableView)
+        title = "Favoritos"
+        navigationController?.navigationBar.prefersLargeTitles = true
         configConstraints()
-        setupLayout()
     }
 
     private func configConstraints() {
@@ -46,19 +39,6 @@ class FavoriteView: UIViewController{
             self.tableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
         ])
     }
-    func setupLayout(){
-        view.backgroundColor = .systemPink
-        view.addSubview(titleLabel)
-
-        NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(
-                equalTo: view.topAnchor,
-                constant: UIScreen.main.bounds.height*0.15
-            ),
-            titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: UIScreen.main.bounds.width*0.1)
-        ])
-
-    }
 }
 
 extension FavoriteView: UITableViewDelegate, UITableViewDataSource {
@@ -68,9 +48,9 @@ extension FavoriteView: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell( withIdentifier: CustomTableViewCell.identifier, for: indexPath) as? CustomTableViewCell
-
         return cell ?? UITableViewCell()
     }
-
-
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
 }

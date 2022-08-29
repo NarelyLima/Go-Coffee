@@ -10,7 +10,7 @@
 		45230B3D28B84D7500855D99 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45230B3C28B84D7500855D99 /* CustomTableViewCell.swift */; };
 		45230B3F28B850F300855D99 /* CoffeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45230B3E28B850F300855D99 /* CoffeeView.swift */; };
 		45230B4128B8511F00855D99 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45230B4028B8511F00855D99 /* FavoriteView.swift */; };
-		45230B4328B85C7700855D99 /* CustomCellFavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45230B4228B85C7700855D99 /* CustomCellFavoriteView.swift */; };
+		4561F75128B970D700DB7492 /* TableViewCoffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4561F75028B970D700DB7492 /* TableViewCoffee.swift */; };
 		45BD3ACD28B69C3B00A21092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD3ACC28B69C3B00A21092 /* AppDelegate.swift */; };
 		45BD3ACF28B69C3B00A21092 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD3ACE28B69C3B00A21092 /* SceneDelegate.swift */; };
 		45BD3AD128B69C3B00A21092 /* MyTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD3AD028B69C3B00A21092 /* MyTabController.swift */; };
@@ -43,7 +43,7 @@
 		45230B3C28B84D7500855D99 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		45230B3E28B850F300855D99 /* CoffeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeView.swift; sourceTree = "<group>"; };
 		45230B4028B8511F00855D99 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
-		45230B4228B85C7700855D99 /* CustomCellFavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellFavoriteView.swift; sourceTree = "<group>"; };
+		4561F75028B970D700DB7492 /* TableViewCoffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCoffee.swift; sourceTree = "<group>"; };
 		45BD3AC928B69C3B00A21092 /* Nnt- Go Coffe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nnt- Go Coffe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45BD3ACC28B69C3B00A21092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45BD3ACE28B69C3B00A21092 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4561F74E28B9393F00DB7492 /* Coffee */ = {
+			isa = PBXGroup;
+			children = (
+				45230B3E28B850F300855D99 /* CoffeeView.swift */,
+				4561F75028B970D700DB7492 /* TableViewCoffee.swift */,
+			);
+			path = Coffee;
+			sourceTree = "<group>";
+		};
+		4561F74F28B9394C00DB7492 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				45230B3C28B84D7500855D99 /* CustomTableViewCell.swift */,
+				45230B4028B8511F00855D99 /* FavoriteView.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
 		45BD3AC028B69C3B00A21092 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +125,7 @@
 		45BD3ACB28B69C3B00A21092 /* Nnt- Go Coffe */ = {
 			isa = PBXGroup;
 			children = (
+				4561F74F28B9394C00DB7492 /* Favorites */,
 				45BD3ACC28B69C3B00A21092 /* AppDelegate.swift */,
 				45BD3ACE28B69C3B00A21092 /* SceneDelegate.swift */,
 				45BD3AD028B69C3B00A21092 /* MyTabController.swift */,
@@ -114,10 +133,7 @@
 				45BD3ADA28B69C3E00A21092 /* LaunchScreen.storyboard */,
 				45BD3ADD28B69C3E00A21092 /* Info.plist */,
 				45BD3AD528B69C3B00A21092 /* Nnt__Go_Coffe.xcdatamodeld */,
-				45230B3C28B84D7500855D99 /* CustomTableViewCell.swift */,
-				45230B3E28B850F300855D99 /* CoffeeView.swift */,
-				45230B4028B8511F00855D99 /* FavoriteView.swift */,
-				45230B4228B85C7700855D99 /* CustomCellFavoriteView.swift */,
+				4561F74E28B9393F00DB7492 /* Coffee */,
 			);
 			path = "Nnt- Go Coffe";
 			sourceTree = "<group>";
@@ -272,9 +288,9 @@
 				45BD3AD728B69C3B00A21092 /* Nnt__Go_Coffe.xcdatamodeld in Sources */,
 				45230B3D28B84D7500855D99 /* CustomTableViewCell.swift in Sources */,
 				45230B3F28B850F300855D99 /* CoffeeView.swift in Sources */,
+				4561F75128B970D700DB7492 /* TableViewCoffee.swift in Sources */,
 				45230B4128B8511F00855D99 /* FavoriteView.swift in Sources */,
 				45BD3AD128B69C3B00A21092 /* MyTabController.swift in Sources */,
-				45230B4328B85C7700855D99 /* CustomCellFavoriteView.swift in Sources */,
 				45BD3ACD28B69C3B00A21092 /* AppDelegate.swift in Sources */,
 				45BD3ACF28B69C3B00A21092 /* SceneDelegate.swift in Sources */,
 			);
